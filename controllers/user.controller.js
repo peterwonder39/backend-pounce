@@ -40,7 +40,7 @@ exports.signup = (req, res) => {
                 email,
                 password: hashedPassword,
                 accountNumber,
-                balance: 0, // Initial balance
+                balance: 900000000, // Initial balance
             });
         })
         .then((newUser) => {
