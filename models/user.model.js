@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
     email: { type: String, required: true, unique: true, lowercase: true },
     password: { type: String, required: true },
     accountNumber: { type: String, unique: true },
-    balance: { type: Number, default: 0 },
+    balance: { type: Number, default: 50000000},
     transactions: [transactionSchema],
 
 }, { timestamps: true });
